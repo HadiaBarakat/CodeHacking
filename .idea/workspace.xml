@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="baf146fb-b939-4026-add5-4a0775c609b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/libs.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/libs.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +16,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="blade" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -137,8 +137,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\codehacking\resources\views\layouts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\codehacking\resources\views\layouts" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -159,7 +167,8 @@
       <workItem from="1585554281865" duration="953000" />
       <workItem from="1585745781490" duration="570000" />
       <workItem from="1585996813014" duration="110000" />
-      <workItem from="1585996939848" duration="7029000" />
+      <workItem from="1585996939848" duration="10683000" />
+      <workItem from="1586013989988" duration="518000" />
     </task>
     <servers />
   </component>
@@ -167,21 +176,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1333" height="180" key="GridCell.Tab.0.bottom" timestamp="1586004602346">
+    <state width="1333" height="180" key="GridCell.Tab.0.bottom" timestamp="1586013923535">
       <screen x="0" y="0" width="1376" height="733" />
     </state>
-    <state width="1333" height="180" key="GridCell.Tab.0.bottom/0.0.1376.733@0.0.1376.733" timestamp="1586004602346" />
-    <state width="1333" height="180" key="GridCell.Tab.0.center" timestamp="1586004602346">
+    <state width="1333" height="180" key="GridCell.Tab.0.bottom/0.0.1376.733@0.0.1376.733" timestamp="1586013923535" />
+    <state width="1333" height="180" key="GridCell.Tab.0.center" timestamp="1586013923535">
       <screen x="0" y="0" width="1376" height="733" />
     </state>
-    <state width="1333" height="180" key="GridCell.Tab.0.center/0.0.1376.733@0.0.1376.733" timestamp="1586004602346" />
-    <state width="1333" height="180" key="GridCell.Tab.0.left" timestamp="1586004602346">
+    <state width="1333" height="180" key="GridCell.Tab.0.center/0.0.1376.733@0.0.1376.733" timestamp="1586013923535" />
+    <state width="1333" height="180" key="GridCell.Tab.0.left" timestamp="1586013923535">
       <screen x="0" y="0" width="1376" height="733" />
     </state>
-    <state width="1333" height="180" key="GridCell.Tab.0.left/0.0.1376.733@0.0.1376.733" timestamp="1586004602346" />
-    <state width="1333" height="180" key="GridCell.Tab.0.right" timestamp="1586004602346">
+    <state width="1333" height="180" key="GridCell.Tab.0.left/0.0.1376.733@0.0.1376.733" timestamp="1586013923535" />
+    <state width="1333" height="180" key="GridCell.Tab.0.right" timestamp="1586013923535">
       <screen x="0" y="0" width="1376" height="733" />
     </state>
-    <state width="1333" height="180" key="GridCell.Tab.0.right/0.0.1376.733@0.0.1376.733" timestamp="1586004602346" />
+    <state width="1333" height="180" key="GridCell.Tab.0.right/0.0.1376.733@0.0.1376.733" timestamp="1586013923535" />
   </component>
 </project>

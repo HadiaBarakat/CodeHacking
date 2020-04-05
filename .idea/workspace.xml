@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baf146fb-b939-4026-add5-4a0775c609b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codehacking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codehacking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/libs.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/libs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +133,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/symfony/routing" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Zq6SnN4J2MKIHAEbU9IVIjUUi1" />
@@ -136,9 +145,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../first" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -168,7 +180,8 @@
       <workItem from="1585745781490" duration="570000" />
       <workItem from="1585996813014" duration="110000" />
       <workItem from="1585996939848" duration="10683000" />
-      <workItem from="1586013989988" duration="518000" />
+      <workItem from="1586013989988" duration="1733000" />
+      <workItem from="1586063474068" duration="5344000" />
     </task>
     <servers />
   </component>
@@ -176,6 +189,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="342" y="145" key="EditFileWatcherDialog" timestamp="1586015104759">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="342" y="145" key="EditFileWatcherDialog/0.0.1376.733@0.0.1376.733" timestamp="1586015104759" />
+    <state x="469" y="122" key="FileChooserDialogImpl" timestamp="1586068774468">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="469" y="122" key="FileChooserDialogImpl/0.0.1376.733@0.0.1376.733" timestamp="1586068774468" />
     <state width="1333" height="180" key="GridCell.Tab.0.bottom" timestamp="1586013923535">
       <screen x="0" y="0" width="1376" height="733" />
     </state>
@@ -192,5 +213,13 @@
       <screen x="0" y="0" width="1376" height="733" />
     </state>
     <state width="1333" height="180" key="GridCell.Tab.0.right/0.0.1376.733@0.0.1376.733" timestamp="1586013923535" />
+    <state x="0" y="2" width="1376" height="721" key="SettingsEditor" timestamp="1586066584034">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="0" y="2" width="1376" height="721" key="SettingsEditor/0.0.1376.733@0.0.1376.733" timestamp="1586066584034" />
+    <state x="351" y="54" width="672" height="678" key="search.everywhere.popup" timestamp="1586068684470">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="351" y="54" width="672" height="678" key="search.everywhere.popup/0.0.1376.733@0.0.1376.733" timestamp="1586068684470" />
   </component>
 </project>

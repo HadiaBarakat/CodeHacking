@@ -45,4 +45,8 @@ class User extends Authenticatable
         return $this->morphOne(Image::class, 'imageable');
     }
 
+    public function setPasswordAttribute($value){
+        $this->attributes['password'] = bcrypt($value);
+    }
+
 }

@@ -4,9 +4,8 @@
     <list default="true" id="baf146fb-b939-4026-add5-4a0775c609b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UsersRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UsersRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +188,8 @@
       <workItem from="1585996813014" duration="110000" />
       <workItem from="1585996939848" duration="10683000" />
       <workItem from="1586013989988" duration="1733000" />
-      <workItem from="1586063474068" duration="7658000" />
+      <workItem from="1586063474068" duration="8575000" />
+      <workItem from="1586152313967" duration="3268000" />
     </task>
     <servers />
   </component>
@@ -201,10 +201,10 @@
       <screen x="0" y="0" width="1376" height="733" />
     </state>
     <state x="342" y="145" key="EditFileWatcherDialog/0.0.1376.733@0.0.1376.733" timestamp="1586015104759" />
-    <state x="469" y="122" key="FileChooserDialogImpl" timestamp="1586068774468">
+    <state x="469" y="122" key="FileChooserDialogImpl" timestamp="1586152707223">
       <screen x="0" y="0" width="1376" height="733" />
     </state>
-    <state x="469" y="122" key="FileChooserDialogImpl/0.0.1376.733@0.0.1376.733" timestamp="1586068774468" />
+    <state x="469" y="122" key="FileChooserDialogImpl/0.0.1376.733@0.0.1376.733" timestamp="1586152707223" />
     <state width="1333" height="180" key="GridCell.Tab.0.bottom" timestamp="1586013923535">
       <screen x="0" y="0" width="1376" height="733" />
     </state>

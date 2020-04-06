@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UsersEditRequest;
 use App\Http\Requests\UsersRequest;
 use App\Image;
 use App\Role;
@@ -73,7 +74,9 @@ class AdminUsersController extends Controller
      */
     public function edit($id)
     {
-        return view('admin.users.edit');
+        $user = User::findOrFail($id);
+        $roles = Role::pluck('name', 'id');
+        return view('admin.users.edit', compact('user', 'roles'));
 
     }
 
@@ -84,9 +87,26 @@ class AdminUsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UsersEditRequest $request, $id)
     {
-        //
+        $input = $request->all();
+
+        if(empty(trim($input['password']))){
+            $input = $request->except('password');
+        }
+
+        $user = User::findOrFail($id);
+        $user->update($input);
+
+        if($image = $request->file('image')){
+            $imageName = $image->getClientOriginalName();
+            $image->move('images', $imageName);
+            $input['image'] = $imageName;
+
+            $user->image()->updateOrCreate([], ['url'=>$input['image']]);
+        }
+
+        return redirect('/admin/users');
     }
 
     /**

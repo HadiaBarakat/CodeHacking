@@ -1,5 +1,6 @@
 <?php
 
+use App\Image;
 use App\User;
 use Illuminate\Support\Facades\Route;
 
@@ -27,4 +28,9 @@ Route::resource('admin/posts', 'AdminPostsController');
 
 Route::get('/admin', function (){
     return view('admin.index');
+});
+
+Route::get('/image', function (){
+    $user = User::find(24);
+    return $user->image;
 });

@@ -8,6 +8,8 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
+    private $imagesDirectory = "/images/";
+
     use Notifiable;
 
     /**
@@ -42,11 +44,10 @@ class User extends Authenticatable
     }
 
     public function image(){
-        return $this->morphOne(Image::class, 'imageable');
+        return $this->morphOne('App\Image', 'imageable');
     }
 
     public function setPasswordAttribute($value){
         $this->attributes['password'] = bcrypt($value);
     }
-
 }

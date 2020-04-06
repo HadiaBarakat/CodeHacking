@@ -15,9 +15,11 @@
             <th>Name</th>
             <th>Email</th>
             <th>Role Id</th>
+            <th>Image</th>
             <th>Active</th>
             <th>Created At</th>
             <th>Updated At</th>
+            <th>Update</th>
           </tr>
         </thead>
         <tbody>
@@ -29,9 +31,13 @@
                     <td>{{$user->name}}</td>
                     <td>{{$user->email}}</td>
                     <td>{{$user->role_id}}</td>
+                    <td><img height="50" class="img-rounded"
+                             src="{{$user->image ? $user->image->url : App\Image::$placeholderImage}}"
+                             alt=""></td>
                     <td>{{$user->is_active == 1? 'Active' : 'Not Active'}}</td>
                     <td>{{$user->created_at->diffForHumans()}}</td>
                     <td>{{$user->updated_at->diffForHumans()}}</td>
+                    <td><a href="{{route('users.edit', $user->id)}}">Update</a></td>
                   </tr>
           @endforeach
         @endif

@@ -2,6 +2,7 @@
 
 use App\Image;
 use App\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,14 +24,17 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('admin/users', 'AdminUsersController');
-Route::resource('admin/posts', 'AdminPostsController');
 
 Route::get('/admin', function (){
     return view('admin.index');
 });
 
-Route::get('/image', function (){
-    $user = User::find(24);
-    return $user->image;
-});
+//Route::group(['middleware'=>'admin'], function (){
+    Route::resource('admin/users', 'AdminUsersController');
+    Route::resource('admin/posts', 'AdminPostsController');
+//});
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

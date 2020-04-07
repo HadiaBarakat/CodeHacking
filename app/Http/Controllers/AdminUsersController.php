@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\UsersEditRequest;
-use App\Http\Requests\UsersRequest;
+use App\Http\Requests\UsersCreateRequest;
 use App\Image;
 use App\Role;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class AdminUsersController extends Controller
 {
@@ -41,12 +42,12 @@ class AdminUsersController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(UsersRequest $request)
+    public function store(UsersCreateRequest $request)
     {
         $input = $request->all();
 
         if($image = $request->file('image')){
-            $imageName = $image->getClientOriginalName();
+            $imageName = time() . $image->getClientOriginalName();
             $image->move('images', $imageName);
             $input['image'] = $imageName;
         }
@@ -117,6 +118,8 @@ class AdminUsersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        User::findOrFail($id)->delete();
+        Session::flash('user_deleted', "The User Deleted Successfully");
+        return redirect('/admin/users');
     }
 }

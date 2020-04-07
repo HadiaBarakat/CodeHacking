@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
+use App\Http\Requests\PostsCreateRequest;
+use App\Post;
+use App\User;
 use Illuminate\Http\Request;
 
 class AdminPostsController extends Controller
@@ -13,7 +17,8 @@ class AdminPostsController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Post::all();
+        return view('admin.posts.index', compact('posts'));
     }
 
     /**
@@ -23,7 +28,11 @@ class AdminPostsController extends Controller
      */
     public function create()
     {
-        //
+        $users = User::pluck('name', 'id');
+        $categories = Category::all();
+
+        return view('admin.posts.create',
+            compact('users', 'categories'));
     }
 
     /**
@@ -32,9 +41,26 @@ class AdminPostsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PostsCreateRequest $request)
     {
-        //
+        $input = $request->all();
+
+        if($image = $request->file('image')){
+            $imageName = time() . $image->getClientOriginalName();
+            $image->move('images', $imageName);
+            $input['image'] = $imageName;
+        }
+        $post = Post::create($input);
+        $post->image()->create(['url'=>$input['image']]);
+
+        $categories = Category::all();
+        foreach ($categories as $category){
+            if($request->input($category->id)){
+                $post->categories()->save($category);
+            }
+        }
+
+        return redirect('/admin/posts');
     }
 
     /**

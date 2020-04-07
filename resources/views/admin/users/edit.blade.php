@@ -4,12 +4,12 @@
 
     <h1>Edit User</h1>
 
-    <div class="col-sm-3">
+    <div class="col-sm-4">
         <img class="img-responsive img-rounded"
              src="{{$user->image ? $user->image->url : App\Image::$placeholderImage}}"
              alt="">
     </div>
-    <div class="col-sm-9">
+    <div class="col-sm-8">
         {!! Form::model($user,
                     ['method'=>'patch', 'action'=>['AdminUsersController@update', $user->id], 'files'=>'true']) !!}
             @csrf
@@ -50,10 +50,18 @@
             </div>
 
             <div class="form-group">
-                {!! Form::submit('Update User', ['class'=>'btn btn-primary']) !!}
+                {!! Form::submit('Update User', ['class'=>'btn btn-primary col-sm-4']) !!}
             </div>
 
         {!! Form::close() !!}
+
+        {!! Form::open(['method'=>'delete',
+                        'action'=>['AdminUsersController@destroy', $user->id]]) !!}
+        <div class="form-group">
+            {!! Form::submit('Delete User', ['class'=>'btn btn-danger col-sm-4']) !!}
+        </div>
+        {!! Form::close() !!}
+
         @include('includes.form_errors')
     </div>
 @endsection
